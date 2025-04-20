@@ -1,6 +1,11 @@
-import Link from "next/link"
+"use client"
+
+import { useState } from "react"
+import { ArrowRight } from "lucide-react"
+import AiPortfolioModal from "./ai-portfolio-modal"
 
 export default function HeroSection() {
+  const [isPortfolioModalOpen, setIsPortfolioModalOpen] = useState(false)
   return (
     <section className="relative min-h-screen overflow-hidden bg-black flex items-center">
       <div className="absolute inset-0">
@@ -18,12 +23,18 @@ export default function HeroSection() {
         <p className="text-lg md:text-xl mb-8 max-w-xl">
           Analyze, buy, and sell with tools purpose-built for how you trade.
         </p>
-        <Link
-          href="#"
-          className="bg-[#CBFF00] hover:bg-[#B8E600] text-black rounded-full px-8 py-3 text-sm font-medium inline-block"
+        <button
+          onClick={() => setIsPortfolioModalOpen(true)}
+          className="bg-[#CBFF00] hover:bg-[#B8E600] text-black rounded-full px-8 py-4 text-sm font-medium flex items-center"
         >
-          Sign up
-        </Link>
+          Get Started
+          <ArrowRight className="h-4 w-4 ml-2" />
+        </button>
+
+        <AiPortfolioModal
+          isOpen={isPortfolioModalOpen}
+          onClose={() => setIsPortfolioModalOpen(false)}
+        />
       </div>
     </section>
   )

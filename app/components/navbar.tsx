@@ -4,10 +4,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import { ChevronDown, ChevronUp, Globe } from "lucide-react"
+import AiPortfolioModal from "./ai-portfolio-modal"
 
 export default function Navbar({ setIsMobileMenuOpen }: { setIsMobileMenuOpen: (open: boolean) => void }) {
   const [isOfferMenuOpen, setIsOfferMenuOpen] = useState(false)
   const [isRegionMenuOpen, setIsRegionMenuOpen] = useState(false)
+  const [isPortfolioModalOpen, setIsPortfolioModalOpen] = useState(false)
 
   return (
     <header className="border-b border-zinc-800 fixed w-full top-0 z-50 bg-black">
@@ -94,29 +96,30 @@ export default function Navbar({ setIsMobileMenuOpen }: { setIsMobileMenuOpen: (
                 </div>
               )}
             </div>
-            <Link
-              href="#"
+            <button
+              onClick={() => setIsPortfolioModalOpen(true)}
               className="border border-[#CBFF00] text-[#CBFF00] rounded-full px-8 h-12 text-sm hover:bg-[#CBFF00]/10 mr-3 flex items-center"
             >
               Log in
-            </Link>
-            <Link
-              href="#"
+            </button>
+            <button
+              onClick={() => setIsPortfolioModalOpen(true)}
               className="bg-[#CBFF00] hover:bg-[#B8E600] text-black rounded-full px-8 h-12 text-sm font-medium flex items-center"
             >
               Sign up
-            </Link>
+            </button>
+            <AiPortfolioModal isOpen={isPortfolioModalOpen} onClose={() => setIsPortfolioModalOpen(false)} />
           </div>
 
           {/* Mobile elements */}
           <div className="flex items-center md:hidden">
             {/* Sign up button - visible on mobile */}
-            <Link
-              href="#"
+            <button
+              onClick={() => setIsPortfolioModalOpen(true)}
               className="bg-[#CBFF00] hover:bg-[#B8E600] text-black rounded-full px-5 h-11 text-sm font-medium mr-3 flex items-center"
             >
-              Sign up
-            </Link>
+              Get Started
+            </button>
 
             {/* Mobile menu button - 2 line hamburger */}
             <button
