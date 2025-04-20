@@ -10,10 +10,9 @@ export default function JoinSection() {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
       <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-10">
-          Join a new generation
-          <br />
-          of investors
+        <h2 className="text-5xl md:text-5xl lg:text-6xl mb-12 md:mb-16 font-serif ">
+          <div>Join a new generation</div>
+          <div className="md:mt-6">of investors</div>
         </h2>
         <Link
           href="#"
