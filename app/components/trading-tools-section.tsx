@@ -3,12 +3,12 @@ import Link from "next/link"
 export default function TradingToolsSection() {
   return (
     <section
-      className="relative py-16 md:py-20 bg-cover bg-center min-h-[500px] md:min-h-[600px] flex flex-col"
+      className="relative py-40 md:py-40 bg-cover bg-center min-h-[500px] md:min-h-[600px] flex flex-col"
       style={{
         backgroundImage: `url("https://images.ctfassets.net/ilblxxee70tt/72AW6WOPCImTemmsfDxVFk/276b95a7314a0d484a27f3f51cc47a82/web_homepage_investing_2.jpeg")`,
       }}
     >
-      <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col flex-grow">
+      <div className="container mx-auto py-8 px-4 md:px-6 relative z-10 flex flex-col flex-grow">
         <div className="md:max-w-md md:ml-[50%]">
           <h2 className="text-[#CBFF00] font-medium mb-3 text-2xl md:text-3xl">Intuitive trading tools</h2>
           <h3 className="text-2xl md:text-3xl mb-4 text-white">

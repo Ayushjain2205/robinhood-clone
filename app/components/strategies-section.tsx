@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function StrategiesSection() {
   return (
     <section
-      className="py-16 md:py-20 relative overflow-hidden flex items-center bg-cover bg-center min-h-[500px] md:min-h-[700px]"
+      className="py-40 md:py-40 relative overflow-hidden flex items-center bg-cover bg-center min-h-[500px] md:min-h-[700px]"
       style={{
         backgroundImage: `url("https://images.ctfassets.net/ilblxxee70tt/2IeGSELP82mOWLNZHSE5R5/2dd98fffc51573df6d68de384a175435/RH25_Strategiespromo_wide_homepage_hero.jpeg")`,
       }}

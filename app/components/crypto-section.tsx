@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function CryptoSection() {
   return (
     <section
-      className="py-16 md:py-20 relative overflow-hidden flex items-center bg-cover bg-center min-h-[500px] md:min-h-[600px]"
+      className="py-40 md:py-40 relative overflow-hidden flex items-center bg-cover bg-center min-h-[500px] md:min-h-[600px]"
       style={{
         backgroundImage: `url("https://images.ctfassets.net/ilblxxee70tt/1yBfcc0Y35v8vHS6eUXWMR/5ba2fd65e0cc48044084099e57625f94/web_crypto_hero.jpg")`,
       }}
