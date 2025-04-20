@@ -9,7 +9,7 @@ export default function TradingToolsSection() {
       }}
     >
       <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col flex-grow">
-        <div className="md:max-w-md md:ml-auto">
+        <div className="md:max-w-md md:ml-[50%]">
           <h2 className="text-[#CBFF00] font-medium mb-3 text-2xl md:text-3xl">Intuitive trading tools</h2>
           <h3 className="text-2xl md:text-3xl mb-4 text-white">
             Build your strategy

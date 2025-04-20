@@ -13,8 +13,7 @@ export default function StrategiesSection() {
         <div className="max-w-2xl">
           <div>
             <div className="flex items-center mb-4">
-              <Image src="/robinhood.svg" alt="Robinhood" width={20} height={20} className="mr-2" />
-              <span className="font-medium">Robinhood Strategies</span>
+              <Image src="/robinhood-strategies.svg" alt="Robinhood" width={292} height={32} className="mr-2" />
             </div>
             <h3 className="text-3xl md:text-4xl mb-6">
               Your portfolio, handled

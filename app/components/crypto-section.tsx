@@ -11,10 +11,10 @@ export default function CryptoSection() {
     >
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-[#110E08]">
-        <div className="md:max-w-md md:ml-auto">
+        <div className="md:max-w-md md:ml-[50%]">
           <div className="flex items-center mb-4">
-            <Image src="/robinhood.svg" alt="Robinhood" width={20} height={20} className="mr-2" />
-            <span className="font-medium">Robinhood Crypto</span>
+            <Image src="/robinhood-crypto.svg" alt="Robinhood Crypto" width={260} height={32} className="mr-2 mb-1" />
+           
           </div>
           <h3 className="text-3xl md:text-4xl mb-4">
             Get started with
