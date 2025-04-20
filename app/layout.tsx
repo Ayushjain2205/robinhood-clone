@@ -15,7 +15,7 @@ const merriweather = Merriweather({
 })
 
 export const metadata = {
-  title: "Robinhood: Built for the Future of Trading",
+  title: "Robinhood: 24/5 Commission-Free Stock Trading",
   description: "Analyze, buy, and sell with tools purpose-built for how you trade.",
   
 }
