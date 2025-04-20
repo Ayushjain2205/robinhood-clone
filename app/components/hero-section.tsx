@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen overflow-hidden bg-black flex items-center">
       <div className="absolute inset-0">
         <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-          <source src="/hero-background.webm" type="video/webm" />
+          <source src="https://videos.ctfassets.net/ilblxxee70tt/2tTb7sFXtrPntWEMy81hFc/80c31844d3804f9c5ea3b87e4be59f4d/BATS_HPTO_FINAL.webm" type="video/webm" />
         </video>
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
